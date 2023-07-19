@@ -97,15 +97,73 @@ nav li a{
      padding: 20px;
 
    }
-   nav {
+   nav, .team-contain
+     {
     flex-direction: column;
+   }
+    .img-contain {
+     display: grid;
+     grid-template-columns:1fr;
    }
   
 }
 @media screen and (min-width:576px) and (max-width:960px) {
    nav{
     flex-direction: column;
-    
+
+   }
+   main{
+    max-width: 1440px;
+    margin: 0 auto;
+
    }
   
+}
+.team-contain{
+  display: flex;
+  align-items: center;
+}
+.img-contain{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 25px;
+}
+.kaam-kori{
+  max-width: 540px;
+  gap: 24px;
+  padding-left: 70px;
+}
+.team-title{
+  width: 468px;
+  color: var(--dark-03, #727272);
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.our{
+  color: var(--dark-01, #131313);
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.feat{
+  color: #FF900E;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.team-des{
+  color: var(--dark-03, #727272);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 537px;
 }
